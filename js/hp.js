@@ -14,3 +14,13 @@ var options = {
   density: 'high'
 };
 var particleCanvas = new ParticleNetwork(canvasDiv, options);
+// Auxiliacao e efeito paralax
+
+// Efeito scroll, rolagem da página, pega a barra na esquerda e muda ela para ficar fixa
+const paralax = (d) => {// Arrow function `ES6`, calcula a posição para que mostre o efeito
+		let e = document.querySelector(d)
+    if(window.pageYOffset + ((window.innerHeight * 3) / 4) > e.offsetTop) {
+			e.setAttribute( `style`, `opacity:1;transition-duration:0.5s`)
+			//ea.setAttribute( `style`, `opacity:0.1;transition-duration:2s` )
+		}
+}
