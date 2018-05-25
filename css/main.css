@@ -1,0 +1,24 @@
+/* latin */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+*{
+	font-family:"Orbitron";
+	transition-duration:0.8s;
+	margin:0;
+	padding:0;
+}body, html{
+	left:0;
+	right:0;
+	top:0;
+	width:100%;
+	overflow-x:hidden
+}body{
+	background-color:#000
+}
+.center{
+/*	margin:auto;*/
+	z-index:2;
+	text-align:center;
+	margin: auto;
+}
+a{color:green;}
