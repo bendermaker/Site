@@ -8,7 +8,7 @@
 var canvasDiv = document.getElementById('particle-canvas');
 var options = {
   particleColor: '#0f0',
-  background: 'https://bendermaker.github.io/Site/assets/logo.png',
+  background: 'https://bendermaker.github.io/assets/logo.png',
   interactive: true,
   speed: 'medium',
   density: 'high'
