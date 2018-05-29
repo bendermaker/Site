@@ -139,6 +139,16 @@ a:hover{
 .totop:hover{
 	opacity:1
 }/* Animação, ver arquivo Ecmascript/scroll-*, onde faz referencia a essa animação */
+footer{
+	botton:0;
+	left:0;
+	right:0;
+	background-color:#000;
+	position:relative;
+	text-align:center
+}footer>*>img{
+	height:100px
+}
 @keyframes totop{
 	0%{
 		opacity:0
