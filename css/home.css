@@ -76,20 +76,29 @@ section{
 	font-weight:100;
 	text-align:justify;
 }section>div.ficha{
+	border-radius: 10px;
 	width:100%;
 	text-align:left;
 	background:#ddd;
-	padding:0;
+	padding:0px;
 	margin-top:10px;
 	border-top:5px solid #ddd;
 }section>div.ficha>img{
+	border-radius: 10px;
+	
 	width:150px;
 	display:inline-block;
-	margin:0;
+	margin:10px;
 }section>div.ficha>div{
 	display:inline-block;
 	vertical-align:top;
 	margin:0;
+}
+/*posicionamento do titulo dentro das fichas*/
+section>div.ficha>div>h3{
+ text-align: center;
+ margin-top: 10px;		
+
 }
 .left{
 	width:45%;
@@ -145,3 +154,5 @@ input, textarea{
 	color:#ddd;
 	background-color:#333;
 }
+
+
