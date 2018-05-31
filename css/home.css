@@ -1,26 +1,147 @@
 body{
 	background-color:#fff
 }
+menu#bar{
+	height:49px;
+	padding-top:18px;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:5;
+	background-color:rgba(255,255,255,0.8);
+	text-align:center;
+	transition-duration:1s
+}menu#bar>a{
+	padding: 21px 22px;
+	color:#666;
+	font-size: 25px;
+	font-weight:300;
+	transition-duration:.7s;
+	font-family: "Lato",sans-serif;
+}menu#bar>a.pop{
+	background-color:#aaa;
+	color:#fff
+}
+menu#bar>a:hover{
+	text-decoration:underline;
+	color:#000;
+	background-color:#aaa;
+	text-decoration:none
+}menu#bar:hover{
+	background-color:#fff;
+	transition-duration:1s
+}
 #particle-canvas{
-	position:absolute;
+	position:relative;
 	left:0;
 	right:0;
 	top:0;
-	height:130%;
+	height:30em;
 	z-index:1;
-	border-bottom:2px solid #030;
-	background-color:#000
-}section{
+	background-color:#000;
+	background-image:url(../assets/bg.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	padding-top:20%;
+}#particle-canvas>*{
+	margin:auto;
+	color:#fff;
+	border:none;
+	background-color:rgba(0,0,0,0.8)
+}#particle-canvas>h1{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	padding:10px;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-weight:200;
+	letter-spacing: 10px;
+	/*font-family:"Orbitron";*/
+	text-align: center;
+}
+section{
 	color:#000;
 	text-align:center;
 	padding-top:10px;
 	position:relative;
 	background-color:#fff;
-}section>p{
 	width:80%;
 	margin:auto;
+	padding-bottom:10px;
+}section>p,section>*>p,section>*>*>p{
 	font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;
 	font-size:1.2em;
 	font-weight:100;
 	text-align:justify;
+}section>div.ficha{
+	width:100%;
+	text-align:left;
+	background:#ddd;
+	padding:0;
+	margin-top:10px;
+	border-top:5px solid #ddd;
+}section>div.ficha>img{
+	width:150px;
+	display:inline-block;
+	margin:0;
+}section>div.ficha>div{
+	display:inline-block;
+	vertical-align:top;
+	margin:0;
+}
+.left{
+	width:45%;
+	display:inline-block;
+	margin-left:0px;
+	position:relative
+}div.right{
+	width:50%;
+	vertical-align: top;
+	display:inline-block;
+	margin-right:0px;
+	position:relative
+}
+.formulario{
+	width:100%;
+	display:block;
+	padding:20px
+}
+input, textarea{
+	display:block;
+	background-color:#fff;
+	margin:5px;
+	border:none;
+	border:4px solid #ddd;
+	height:20px;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	color:#000;
+	font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;
+}textarea{
+	height:70px;
+}
+.botaor{
+	font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;
+	font-size:1.1em;
+	height:40px;
+	width:51%;
+	transition-duration:.6s;
+	display:block;
+	background-color:#fff;
+	margin:5px;
+	border:none;
+	border:4px solid #ddd;
+	margin-left:auto;
+	margin-right:auto;
+	color:#000;
+}
+/*
+	Classes de atribuiçoes
+*/
+.dark,.dark>*{
+	color:#ddd;
+	background-color:#333;
 }
