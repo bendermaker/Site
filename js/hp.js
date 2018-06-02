@@ -18,6 +18,7 @@ const menu = () => {
 const go = (elemento) => {// Arrow function levando um parâmetro que será um seletor como o de css
   let vivo = document.querySelector(elemento)// Pegará esse seletor e retornará um elemento vivo
 	console.log(elemento)
+	history.pushState(elemento,elemento,elemento)
   window.scroll({ // Função nativa dos browsers
 	  top: (vivo.offsetTop - 66), // Captura a quantidade precisa de px do elemento em cada tela diferente fiii
 	  left: 0,// Obrigatório, nao queremos movimentos horizontais
