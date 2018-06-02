@@ -12,7 +12,10 @@ menu#bar{
 	background-color:rgba(255,255,255,0.8);
 	text-align:center;
 	transition-duration:1s
-}menu#bar>a{
+}menu#bar>img{
+	display:none
+}
+menu#bar>a{
 	padding: 21px 22px;
 	color:#666;
 	font-size: 25px;
@@ -154,5 +157,15 @@ input, textarea{
 	color:#ddd;
 	background-color:#333;
 }
-
-
+@media (max-width:1050px){
+	menu#bar>a{
+		display:none;
+	}menu#bar>img{
+		margin:auto;
+		display:block;
+	}
+	menu#bar{
+		padding:0;
+		height:auto
+	}
+}
