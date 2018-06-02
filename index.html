@@ -32,13 +32,15 @@
 
 <body onscroll="paralax('section')">
 	<menu id="bar">
-		<img style="height:100%" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2IDU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NiA1NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxwYXRoIGQ9Ik0yOCwwQzEyLjU2MSwwLDAsMTIuNTYxLDAsMjhzMTIuNTYxLDI4LDI4LDI4czI4LTEyLjU2MSwyOC0yOFM0My40MzksMCwyOCwweiBNMTUsMTVoMjZjMC41NTMsMCwxLDAuNDQ4LDEsMXMtMC40NDcsMS0xLDEgIEgxNWMtMC41NTMsMC0xLTAuNDQ4LTEtMVMxNC40NDcsMTUsMTUsMTV6IE00MSw0MUgxNWMtMC41NTMsMC0xLTAuNDQ4LTEtMXMwLjQ0Ny0xLDEtMWgyNmMwLjU1MywwLDEsMC40NDgsMSwxUzQxLjU1Myw0MSw0MSw0MXogICBNNDUsMzNIMTFjLTAuNTUzLDAtMS0wLjQ0OC0xLTFzMC40NDctMSwxLTFoMzRjMC41NTMsMCwxLDAuNDQ4LDEsMVM0NS41NTMsMzMsNDUsMzN6IE00NSwyNUgxMWMtMC41NTMsMC0xLTAuNDQ4LTEtMXMwLjQ0Ny0xLDEtMSAgaDM0YzAuNTUzLDAsMSwwLjQ0OCwxLDFTNDUuNTUzLDI1LDQ1LDI1eiIgZmlsbD0iIzZlNmU2ZSIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"/>
-		<a href="#sobre" onclick="go(`#sobre`);return false">Sobre</a> 
-		<a href="#qmsomos" onclick="go(`#qmsomos`);return false">Quem somos</a> 
-		<a href="#parcerias" onclick="go(`#parceria`);return false">Parcerias/Patrocinadores</a> 
-		<a href="#contato" onclick="go(`#contato`);return false">Contato</a> 
-		<a href="#local" onclick="go(`#local`);return false">Local</a> 
-		<a href="http://medium.com/@benderm" class="pop" title="Bender Medium" target="_blank">Noticias</a>
+		<img onclick="menu()" style="height:100%" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2IDU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NiA1NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxwYXRoIGQ9Ik0yOCwwQzEyLjU2MSwwLDAsMTIuNTYxLDAsMjhzMTIuNTYxLDI4LDI4LDI4czI4LTEyLjU2MSwyOC0yOFM0My40MzksMCwyOCwweiBNMTUsMTVoMjZjMC41NTMsMCwxLDAuNDQ4LDEsMXMtMC40NDcsMS0xLDEgIEgxNWMtMC41NTMsMC0xLTAuNDQ4LTEtMVMxNC40NDcsMTUsMTUsMTV6IE00MSw0MUgxNWMtMC41NTMsMC0xLTAuNDQ4LTEtMXMwLjQ0Ny0xLDEtMWgyNmMwLjU1MywwLDEsMC40NDgsMSwxUzQxLjU1Myw0MSw0MSw0MXogICBNNDUsMzNIMTFjLTAuNTUzLDAtMS0wLjQ0OC0xLTFzMC40NDctMSwxLTFoMzRjMC41NTMsMCwxLDAuNDQ4LDEsMVM0NS41NTMsMzMsNDUsMzN6IE00NSwyNUgxMWMtMC41NTMsMC0xLTAuNDQ4LTEtMXMwLjQ0Ny0xLDEtMSAgaDM0YzAuNTUzLDAsMSwwLjQ0OCwxLDFTNDUuNTUzLDI1LDQ1LDI1eiIgZmlsbD0iIzZlNmU2ZSIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"/>
+		<div data-status="0">
+			<a href="#sobre" onclick="go(`#sobre`);return false">Sobre</a> 
+			<a href="#qmsomos" onclick="go(`#qmsomos`);return false">Quem somos</a> 
+			<a href="#parcerias" onclick="go(`#parceria`);return false">Parcerias/Patrocinadores</a> 
+			<a href="#contato" onclick="go(`#contato`);return false">Contato</a> 
+			<a href="#local" onclick="go(`#local`);return false">Local</a> 
+			<a href="http://medium.com/@benderm" class="pop" title="Bender Medium" target="_blank">Noticias</a>
+		</div>
 	</menu>
 	<header>
 		<div id="particle-canvas">
@@ -95,7 +97,7 @@
 					<h3>Desenvolvedor e idealizador</h3>
 					<p class="bio">
 						Bio: Desenvolvedor de aplicações voltadas a robótica e web<br/>
-						Github: <a href="https://github.com/FelipeSergi0">Luis Vitor</a><br/>
+						whatsapp: <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5584999736676">Luis Vitor</a><br/>
 						Telegram: <a href="https://web.telegram.org/#/im?p=u163484596_12355098374428012478" target="_blank">Luis vitor</a>
 					</p>
 				</div>

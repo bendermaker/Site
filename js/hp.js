@@ -1,4 +1,18 @@
-
+const menu = () => {
+	// Elemento no qual fará o efeito
+	let elem = document.querySelector(`menu#bar>div`)
+	let anim = document.querySelector(`menu#bar>img`)
+	if(elem.dataset.status){
+		elem.setAttribute(`style`,`display:block;background:#aaa`)
+		delete elem.dataset.status
+		anim.setAttribute(`class`,`rod`)
+		elem.addEventListener("click", menu)
+	}else{
+		elem.setAttribute(`style`,`display:none;background:#aaa`)
+		elem.dataset.status = "1"
+		anim.setAttribute(`class`,null)
+	}
+}
 // Scroll, ao topo ^^
 // Puta que pariu! esse código só isso vai rodarrr coisas que precisaria de toda uma LIBBBB
 const go = (elemento) => {// Arrow function levando um parâmetro que será um seletor como o de css
@@ -70,8 +84,6 @@ const enviar = (nome, email, mensagem, lugar) => {
 			forall(compos)
 		})
 	})
-	
-
 }
 //const retornar = (seletor, buf) => {
 //	document.querySelector(seletor).innerHTML = buf

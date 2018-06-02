@@ -15,18 +15,18 @@ menu#bar{
 }menu#bar>img{
 	display:none
 }
-menu#bar>a{
+menu#bar>div>a{
 	padding: 21px 22px;
 	color:#666;
 	font-size: 25px;
 	font-weight:300;
 	transition-duration:.7s;
 	font-family: "Lato",sans-serif;
-}menu#bar>a.pop{
+}menu#bar>div>a.pop{
 	background-color:#aaa;
 	color:#fff
 }
-menu#bar>a:hover{
+menu#bar>div>a:hover{
 	text-decoration:underline;
 	color:#000;
 	background-color:#aaa;
@@ -88,7 +88,6 @@ section{
 	border-top:5px solid #ddd;
 }section>div.ficha>img{
 	border-radius: 10px;
-	
 	width:150px;
 	display:inline-block;
 	margin:10px;
@@ -99,7 +98,7 @@ section{
 }
 /*posicionamento do titulo dentro das fichas*/
 section>div.ficha>div>h3{
- text-align: center;
+ text-align: justify;
  margin-top: 10px;		
 
 }
@@ -158,14 +157,38 @@ input, textarea{
 	background-color:#333;
 }
 @media (max-width:1050px){
-	menu#bar>a{
+	menu#bar>div{/* ##### Menu */
 		display:none;
-	}menu#bar>img{
-		margin:auto;
+	}
+	menu#bar>div>a{
+		display:block
+	}
+	menu#bar>img{
 		display:block;
+		margin:auto;
+		transition-duration:0.8s
+	}.rod{
+		transform: rotate(90deg);
+		transition-duration:0.8s
 	}
 	menu#bar{
 		padding:0;
+		height:49px;
 		height:auto
+	}.left{/* Texto */
+		width:100%;
+		display:block;
+		margin:auto
+	}div.right{
+		width:100%;
+		vertical-align: !important;
+		display:block;
+		margin:auto
+	}section>div.ficha>div>h3{/* Potifolios */
+		text-align:center
+	}section>div.ficha>img{
+		margin:auto;
+		border-radius:50%;
+		display:block
 	}
 }
