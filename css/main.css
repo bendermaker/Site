@@ -151,7 +151,7 @@ footer{
 	text-align:center
 }footer>*>img{
 	height:100px
-}
+}p{font-size:1.2em}h1{font-size:2em}
 @keyframes totop{
 	0%{
 		opacity:0
