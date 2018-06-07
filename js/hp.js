@@ -23,8 +23,8 @@ const go = (elemento) => {// Arrow function levando um parâmetro que será um s
 	  left: 0,// Obrigatório, nao queremos movimentos horizontais
 	  behavior: 'smooth' // Unico efeito, dá a instrução ao browser que ele movaaaa uhuuull caraaai
   });// terminouuu fiii, só isso, c n vai precisar exporrtar mais 5000mil instruçoes de dados da porra do jquery
-	
-} 
+
+}
 // Auxiliacao e efeito paralax
 // Efeito scroll, rolagem da página, pega a barra na esquerda e muda ela para ficar fixa
 const paralax = (d) => {// Arrow function `ES6`, calcula a posição para que mostre o efeito
@@ -51,41 +51,42 @@ const enviar = (nome, email, mensagem, lugar) => {
 	let nom = document.querySelector(nome).value
 	let emai = document.querySelector(email).value
 	let mensage = document.querySelector(mensagem).value
+	if (!((nom === "") || (emai === "") || (mensage === ""))){
+		let compos = encodeURIComponent(
+		`
+			<strong>Nova mensagem enviada</strong>
+				Nome: <strong>${nom}</strong> \r
+				Email:  <strong>${emai}</strong> \r
+				Mensagem: <strong>${mensage}</strong>
 
-
-	let compos = encodeURIComponent(
-	`
-		<strong>Nova mensagem enviada</strong>
-			Nome: <strong>${nom}</strong> \r
-			Email:  <strong>${emai}</strong> \r
-			Mensagem: <strong>${mensage}</strong>
-		
-	`)
-	fetch(
-	`https://api.telegram.org/bot560943011:AAGu7RzuQSmHGswI7Iin9wqlf1luLbvYIH4/sendMessage?chat_id=469669662&text=${compos}&parse_mode=html`
-	).then((resposta) => {
-	return resposta.text() // Transformando a resposta em texto
-		.then((text) => {
-			let t = JSON.parse(text);
-			let uhul = t.ok === false
-				? `Oops, infelizmente houve um erro`
-				: 'Mensagem enviada ^^';
-			let pure = document.querySelector(lugar).innerHTML
-			document.querySelector(lugar).setAttribute("style", "animation-name:sair;animation-duration:0.6s")
-			setTimeout(()=>{
-				document.querySelector(lugar).innerHTML = `
-						<h2>formas de contato <i class="fas fa-pencil-alt"></i></h2>
-							<p style="text-align:center">
-								Acesse nosso github: <a href="https://github.com/bendermaker/" target="_blank">Bendermaker</a><br/>
-								Acesse nosso insta ❤: <a href="https://instagram.com/bendermaker/" target="_blank">@Bendermaker</a>.<br/>
-							</p>
-	`
-				},600)
-			forall(compos)
+		`)
+		fetch(
+		`https://api.telegram.org/bot560943011:AAGu7RzuQSmHGswI7Iin9wqlf1luLbvYIH4/sendMessage?chat_id=469669662&text=${compos}&parse_mode=html`
+		).then((resposta) => {
+		return resposta.text() // Transformando a resposta em texto
+			.then((text) => {
+				let t = JSON.parse(text);
+				let uhul = t.ok === false
+					? `Oops, infelizmente houve um erro`
+					: 'Mensagem enviada ^^';
+				let pure = document.querySelector(lugar).innerHTML
+				document.querySelector(lugar).setAttribute("style", "animation-name:sair;animation-duration:0.6s")
+				setTimeout(()=>{
+					document.querySelector(lugar).innerHTML = `
+							<h2>formas de contato <i class="fas fa-pencil-alt"></i></h2>
+								<p style="text-align:center">
+									Acesse nosso github: <a href="https://github.com/bendermaker/" target="_blank">Bendermaker</a><br/>
+									Acesse nosso insta ❤: <a href="https://instagram.com/bendermaker/" target="_blank">@Bendermaker</a>.<br/>
+								</p>
+		`
+					},600)
+				forall(compos)
+			})
 		})
-	})
+	}else{
+		alert("Por favor preencha ao menos todo o formulário")
+	}
 }
 //const retornar = (seletor, buf) => {
 //	document.querySelector(seletor).innerHTML = buf
 //}
-
