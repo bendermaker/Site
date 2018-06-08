@@ -120,7 +120,8 @@ section>div.ficha>div>h3{
 .formulario{
 	width:100%;
 	display:block;
-	padding:20px
+	padding:20px;
+	margin-left:30px
 }
 input, textarea{
 	display:block;
@@ -195,5 +196,13 @@ input, textarea{
 		display:block
 	}section#parceria>a>img{
 		width:100%;
+	}.formulario{
+		padding:5px;
+		width:100%;
+		margin-left:0px;
+		position:relative
+	}input, textarea{
+		margin:10px auto;
+		padding:1px;
 	}
 }
