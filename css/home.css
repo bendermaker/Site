@@ -78,7 +78,10 @@ section{
 	font-size:1.2em;
 	font-weight:100;
 	text-align:justify;
-}section>div.ficha{
+}section>a>img{
+	width:auto;
+}
+section>div.ficha{
 	border-radius: 10px;
 	width:100%;
 	text-align:left;
@@ -99,7 +102,7 @@ section{
 /*posicionamento do titulo dentro das fichas*/
 section>div.ficha>div>h3{
  text-align: justify;
- margin-top: 10px;		
+ margin-top: 10px;
 
 }
 .left{
@@ -190,5 +193,7 @@ input, textarea{
 		margin:auto;
 		border-radius:50%;
 		display:block
+	}section#parceria>a>img{
+		width:100%;
 	}
 }
