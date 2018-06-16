@@ -120,8 +120,8 @@ section>div.ficha>div>h3{
 .formulario{
 	width:100%;
 	display:block;
-	padding:20px;
-	margin-left:30px
+	padding: 20px 0px;
+	left:0;
 }
 input, textarea{
 	display:block;
