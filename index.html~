@@ -17,12 +17,12 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
 		<meta name="theme-color" content="#000"/>
 		<meta name="robots" content="index, follow"/>
-		<meta name="description" content="Equipe Bender. Bender é uma equipe que tem como finalidade representar o Instituto Metrópole Digital (IMD) na OBR como também em outras olímpiadas de robótica."/>
+		<meta name="description" content="Equipe Bender. Bender é uma equipe de estudantes e pesquisadores voltado a IoT, robótica, cyber segurança e outros assuntos da área."/>
 		<!-- ogs -->
 		<meta property="og:site_name" content="Equipe Bender"/>
-		<meta property="og:title" content="Bender | Bender Equipe | Robótica - NPITI - IMD">
+		<meta property="og:title" content="Bender | Bender Equipe | Team, Robótica, IoT, Security">
 		<meta property="og:image" content="assets/loginho.jpeg"/>
-		<meta property="og:description" content="Bender é uma equipe que tem como finalidade representar o Instituto Metrópole Digital (IMD) na OBR como também em outras olímpiadas de robótica."/>
+		<meta property="og:description" content="Equipe Bender. Bender é uma equipe de estudantes e pesquisadores voltado a IoT, robótica, cyber segurança e outros assuntos da área."/>
 		<meta property="og:author" content="Equipe Bender"/>
 		<!-- linkagem dos arquivos de estilo CSS-->
 		<link rel="stylesheet" href="css/main.css"/>
@@ -32,7 +32,7 @@
 	<script type="application/ld+json">
 		{
 			"name": "bendermaker.github.io",
-			"description": "SBender é uma equipe que tem como finalidade representar o Instituto Metrópole Digital (IMD) na OBR como também em outras olímpiadas de robótica.",
+			"description": "Equipe Bender. Bender é uma equipe de estudantes e pesquisadores voltado a IoT, robótica, cyber segurança e outros assuntos da área.",
 			"@type": "WebSite",
 			"url": "https://bendermaker.github.io/",
 			"headline": "bendermaker.github.io",
@@ -61,11 +61,10 @@
 	<section id="sobre">
 		<h1>Equipe</h1>
 		<p>
-			Somos uma equipe de robótica do Rio Grande do Norte(RN), em formação, composta por alunos do Instituto Metrópole
-			 Digital (IMD), situado na Universidade Federal do Rio Grande do Norte(UFRN), orientados pelo Professor Helder.
+			Somos uma equipe do Rio Grande do Norte (RN), composta por estudante e pesquisadores, fazemos pesquisas nas áreas de Cyber Security, IoT, Robótica e áreas relacionadas.
 		</p>
 		<p>
-			Temos como objetivo a curto prazo, a participação em competições de robótica a nível local, regional e nacional.
+			Temos como objetivo, criar projetos em nossas áreas de atuação e colaborar com a comunidade tanto de cyber segurança quanto em outras áreas como Robótica e IoT.
 		</p>
 
 		<figure class="left"><br/>
@@ -74,8 +73,7 @@
 		</figure>
 		<div class="right">
 			<p>
-			A longo prazo desejamos tornar-se uma comunidade voltada ao desenvolvimento
-			de robótica educacional, sem fins lucrativos.
+			Temos como objetivo produzir projetos usando o conhecimento da comunidade
 			</p>
 			<p>
 			Com essa comunidade poderemos ampliar a participação em competições e melhorar as condições
@@ -85,7 +83,7 @@
 		</div>
 
 	</section><!-- Los hermanos hehe -->
-	<section id="qmsomos">
+	<!--section id="qmsomos">
 		<h1>Nossa equipe</h1>
 			<div class="ficha">
 				<img src="assets/Kadu.jpeg" alt="Desenvolvedor web Carlos"/>
@@ -136,8 +134,7 @@
 				</div>
 			</div>
 
-
-	</section>
+    </section-->
 	<section id="parceria">
 		<h1>Nossos parceiros</h1>
 		<a href="https://portal.imd.ufrn.br/portal/" target="_blank">
